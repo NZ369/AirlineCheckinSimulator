@@ -1,4 +1,5 @@
-# AirlineCheckinSimulator
+# Airline Check-in Simulator
+
 A simulation of an airline check in system using concurrent programming, implemented with POSIX pthread library.  
 
 This simulation is of an airline check-in system, called ACS.  The check-in system includes 2 queues and 4 clerks. One queue (Queue 0) for economy class and the other (Queue 1) for business class. The customers in each queue are served FIFO, and the customers in the business class have a higher priority than the customers in the economy class. In other words, when a clerk is available, the clerk picks a customer in the business class, if any, to serve, and picks a customer in the economy class to serve only if the business class queue is empty. When a clerk is available and there is no customer in any queue, the clerk remains idle. The service time for a customer is known when the customer enters the system.  Threads are used to simulate the customers arriving and waiting for service, and the program will schedule these customers.
@@ -6,18 +7,18 @@ This simulation is of an airline check-in system, called ACS.  The check-in syst
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-Procedures for Running Airline Check-in System Simulator
+###Procedures for Running Airline Check-in System Simulator
 
-[Note: ACS code runs on linux environment]
+*[Note: ACS code runs on linux environment]*
 
 1. To compile code: On terminal execute `make` command.
 2. Ensure customer entry text files are present within the same directory/folder.
 3. Ensure the supplied sample input.txt file is within the same directory.
 4. To run ACS executable, on terminal execute command as follows: `./ACS input.txt` command.
 
-[Note: input.txt can be replaced with any other customer entry text file name.]
+*[Note: input.txt can be replaced with any other customer entry text file name.]*
 
-The customer entry text file must be in the following format.
+###The customer entry text file must be in the following format:
 
 The input file is a text file and has a simple format. The first line contains the total number of customers that will
 be simulated. After that, each line contains the information about a single customer, such that:
