@@ -7,7 +7,7 @@ This simulation is of an airline check-in system, called ACS.  The check-in syst
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-###Procedures for Running Airline Check-in System Simulator
+### Procedures for Running Airline Check-in System Simulator
 
 *[Note: ACS code runs on linux environment]*
 
@@ -18,7 +18,7 @@ This simulation is of an airline check-in system, called ACS.  The check-in syst
 
 *[Note: input.txt can be replaced with any other customer entry text file name.]*
 
-###The customer entry text file must be in the following format:
+### The customer entry text file must be in the following format:
 
 The input file is a text file and has a simple format. The first line contains the total number of customers that will
 be simulated. After that, each line contains the information about a single customer, such that:
@@ -30,6 +30,8 @@ be simulated. After that, each line contains the information about a single cust
 6. A comma(,) immediately follows the previous number.
 7. Immediately following is an integer that indicates the service time of the customer.
 8. A newline (\n) ends a line.
+
+*[Note: input.txt contains an example of entry text file format]*
 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
